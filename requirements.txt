@@ -1,0 +1,18 @@
+# DO NOT include azure-functions-worker in this file
+# The Python Worker is managed by Azure Functions platform
+# Manually managing azure-functions-worker may cause unexpected issues
+
+azure-functions
+azure-functions-durable
+pyodbc
+pandas
+numpy==1.26.4
+sqlalchemy
+scipy
+PyWavelets
+xgboost
+joblib
+azure.keyvault.secrets
+azure.identity
+scikit-learn==1.2.2
+imblearn
