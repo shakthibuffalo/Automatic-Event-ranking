@@ -1,15 +1,9 @@
 # This file is to define all of the constants used for overspeed event classification 
 
-# Server Connection Settings
-# sql_server_name = '10.11.1.8' 
-# sql_database_name = 'SafetyDirect2_master' 
-# sql_username = 'sdWebSite' 
-# sql_password = 'Truck1ngD@ta!'
-
-sql_server_name = '10.11.1.6' 
-sql_database_name = 'SafetyDirect2_master' 
-sql_username = 'sdWebSite' 
-sql_password = 'B3nd1x#207123'
+sql_server_name = 'servername' 
+sql_database_name = 'databasename' 
+sql_username = 'username' 
+sql_password = 'password'
 
 
 # Default Overspeed Settings
@@ -22,7 +16,6 @@ seconds_for_checking_duplicates = 60
 
 ECS_event_id = 1
 
-DATABASE = 'SafetyDirect2_master'
 
 DA_event_id = 1048576
 convert_to_miles = 0.6213711922
@@ -35,78 +28,6 @@ score_classification_map = {
     (70, 100): 'Pre-Grouped (High)'
 }
 
-# namelist = [
-#     [30, 'SafetyDirect2_Shard29', 29],
-#     [49, 'SafetyDirect2_Shard65', 65],
-#     [69, 'SafetyDirect2_Shard73', 73],
-#     [83, 'SafetyDirect2_Shard63', 63],
-#     [90, 'SafetyDirect2_Shard151', 151],
-#     [101, 'SafetyDirect2_Shard67', 67],
-#     [102, 'SafetyDirect2_Shard105', 105],
-#     [111, 'SafetyDirect2_Shard281', 281],
-#     [114, 'SafetyDirect2_Shard24', 24],
-#     [123, 'SafetyDirect2_Shard193', 193],
-#     [154, 'SafetyDirect2_Shard255', 255],
-#     [159, 'SafetyDirect2_Shard265', 265],
-#     [164, 'SafetyDirect2_Shard275', 275],
-#     [169, 'SafetyDirect2_Shard288', 288],
-#     [174, 'SafetyDirect2_Shard298', 298],
-#     [175, 'SafetyDirect2_Shard300', 300],
-#     [181, 'SafetyDirect2_Shard312', 312],
-#     [182, 'SafetyDirect2_Shard314', 314],
-#     [186, 'SafetyDirect2_Shard322', 322],
-#     [189, 'SafetyDirect2_Shard328', 328],
-#     [208, 'SafetyDirect2_Shard367', 367],
-#     [225, 'SafetyDirect2_Shard403', 403],
-#     [230, 'SafetyDirect2_Shard413', 413],
-#     [231, 'SafetyDirect2_Shard415', 415],
-#     [232, 'SafetyDirect2_Shard417', 417],
-#     [233, 'SafetyDirect2_Shard419', 419],
-#     [234, 'SafetyDirect2_Shard421', 421],
-#     [236, 'SafetyDirect2_Shard425', 425],
-#     [261, 'SafetyDirect2_Shard473', 473],
-#     [275, 'SafetyDirect2_Shard501', 501],
-#     [283, 'SafetyDirect2_Shard517', 517],
-#     [290, 'SafetyDirect2_Shard531', 531],
-#     [300, 'SafetyDirect2_Shard550', 550],
-#     [317, 'SafetyDirect2_Shard586', 586],
-#     [330, 'SafetyDirect2_Shard608', 608],
-#     [340, 'SafetyDirect2_Shard628', 628],
-#     [355, 'SafetyDirect2_Shard656', 656],
-#     [371, 'SafetyDirect2_Shard686', 686],
-#     [380, 'SafetyDirect2_Shard704', 704],
-#     [381, 'SafetyDirect2_Shard706', 706],
-#     [393, 'SafetyDirect2_Shard730', 730],
-#     [443, 'SafetyDirect2_Shard832', 832],
-#     [444, 'SafetyDirect2_Shard834', 834],
-#     [455, 'SafetyDirect2_Shard856', 856],
-#     [459, 'SafetyDirect2_Shard864', 864],
-#     [465, 'SafetyDirect2_Shard65', 65],
-#     [466, 'SafetyDirect2_Shard73', 73],
-#     [467, 'SafetyDirect2_Shard63', 63],
-#     [468, 'SafetyDirect2_Shard151', 151],
-#     [469, 'SafetyDirect2_Shard105', 105],
-#     [472, 'SafetyDirect2_Shard24', 24],
-#     [475, 'SafetyDirect2_Shard255', 255],
-#     [477, 'SafetyDirect2_Shard275', 275],
-#     [483, 'SafetyDirect2_Shard314', 314],
-#     [487, 'SafetyDirect2_Shard367', 367],
-#     [490, 'SafetyDirect2_Shard403', 403],
-#     [491, 'SafetyDirect2_Shard417', 417],
-#     [492, 'SafetyDirect2_Shard419', 419],
-#     [493, 'SafetyDirect2_Shard425', 425],
-#     [495, 'SafetyDirect2_Shard517', 517],
-#     [498, 'SafetyDirect2_Shard531', 531],
-#     [499, 'SafetyDirect2_Shard550', 550],
-#     [504, 'SafetyDirect2_Shard656', 656],
-#     [506, 'SafetyDirect2_Shard704', 704],
-#     [507, 'SafetyDirect2_Shard706', 706],
-#     [516, 'SafetyDirect2_Shard870', 870],
-#     [521, 'SafetyDirect2_Shard880', 880],
-#     [550, 'SafetyDirect2_Shard415', 415],
-#     [551, 'SafetyDirect2_Shard686', 686]
-# ]
-namelist3 = [[123 ,'SafetyDirect2_shard193', 193]]
 # namelist3 = [[50 ,'SafetyDirect2_shard101', 101],
 # [95 ,'SafetyDirect2_shard103', 103],
 # [102 ,'SafetyDirect2_shard105', 105],
