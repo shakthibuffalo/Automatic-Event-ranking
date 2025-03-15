@@ -20,6 +20,7 @@ The dataset consists of two primary tables:
 - **PrePostEvent** table: Captures time-segmented sensor data around each event, providing metrics every 0.25 seconds within the ±10 seconds window.
 
 ### Feature Generation
+Detailed explanations of the feature engineering process—including the behaviors captured and the specific code implementations—can be found in the [Feature Generation Notebook](./FeatureEngineering.md).
 Feature engineering captures the nuanced driver behaviors and sensor dynamics surrounding each event. Key engineered features include:
 - **DeltaSpeedRatio**: Measures speed variation before and after the event, highlighting driver reactions.
 - **Braking and Turning Irregularities**: Captures inconsistencies in driver behavior (e.g., sudden braking or erratic steering).
