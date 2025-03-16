@@ -30,6 +30,8 @@ Feature engineering captures the nuanced driver behaviors and sensor dynamics su
 These features aim to extract maximum predictive power from the raw sensor data.
 
 ### Machine Learning Models
+Detailed explanations, model evaluations, and hyperparameter tuning approaches used to select the best predictive model can be found in [MLModelEvaluation.md](./MLmodelEvaluation.md).
+
 The following models were trained and evaluated on the engineered dataset:
 - **Random Forest (balanced class weights)**
 - **Gradient Boosting**
